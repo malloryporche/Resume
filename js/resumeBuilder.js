@@ -1,5 +1,6 @@
+
 var bio = {
-	'name': 'Mallory',
+	'name': 'Mallory Burke',
 	'role': 'Front End Web Developer',
 	'welcomeMessage': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione non velit eos, dicta illum rerum? Voluptatum quae eum, autem saepe, recusandae quod dolorum aliquam temporibus velit corrupti accusamus eius adipisci?',
 	'mobileContact': '323.294.1774',
@@ -7,7 +8,7 @@ var bio = {
 	'githubUsername': ' @malloryporche',
 	'twitterHandle': 'missmalloree',
 	'location': '5060 West 58th Place, Los Angeles, California 90056',
-	'skills': ['HTML5', 'CSS3', 'jQuery', 'Javascript'];
+	'skills': ['HTML5', 'CSS3', 'jQuery', 'Javascript']
 };
 
 var work = {
@@ -17,7 +18,7 @@ var work = {
 			'title': 'Tier2 Account / Project Manager',
 			'location': 'Hollywood, California',
 			'datesWorked': 'September - October 2014',
-			'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusantium, animi, quis quasi in tenetur alias dignissimos quas dicta explicabo voluptate nam distinctio quibusdam enim eius iste iusto dolorem, hic!';
+			'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusantium, animi, quis quasi in tenetur alias dignissimos quas dicta explicabo voluptate nam distinctio quibusdam enim eius iste iusto dolorem, hic!',
 		},
 		{
 			'employer': 'AEI Consultants, Inc.',
@@ -31,8 +32,8 @@ var work = {
 			'title': 'Assistant Manager, Student Store',
 			'location': 'Encino, Califorina',
 			'datesWorked': 'January 2010 - July 2012',
-			'description': 'Point-of-sales displays, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illum eum nemo, dolor, recusandae officiis alias tempora. Magnam maxime, ex dolore quo molestias culpa et libero vero, velit sed assumenda.';
-		};
+			'description': 'Point-of-sales displays, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illum eum nemo, dolor, recusandae officiis alias tempora. Magnam maxime, ex dolore quo molestias culpa et libero vero, velit sed assumenda.',
+		}
 	]
 };
 	
@@ -43,17 +44,51 @@ var education = {
 			'name': 'University of Southern California',
 			'location': 'Los Angeles, California',
 			'degree': 'IP',
-			'major': ['Political Science', 'Race, Ethnicity, and Politics',
+			'major': ['Political Science', 'Race, Ethnicity, and Politics'],
 			'dates': '2004 - 2010',
-			'url': 'www.usc.edu';
-		},
-		{
-			'courseTitle': 'Javascript Basics',
-			'courseURL': 'www.udacity.com',
-			'school': 'www.udacity.com',
-			'datesAttended': 'August 2015',
-			'url to course': ''
-			'date': 'August 2015';
-		};
+			'url': 'www.usc.edu'
+		}
+	],
+	'onlineCourses': [
+			{
+				'courseTitle': 'Javascript Basics',
+				'courseURL': 'www.udacity.com',
+				'school': 'www.udacity.com',
+				'datesAttended': 'August 2015',
+				'url to course': 'www.udacity.com',
+			},
+			{
+				'courseTitle': 'Front End Web Development',
+				'courseURL': 'www.treehouse.org',
+				'school': 'Treehouse',
+				'datesAttended': 'October - December 2014',
+				'urlToCourse': 'www.treehouse.org',
+			},
+			{
+				'courseTitle': 'Front End Web Development',
+				'courseURL': 'www.gmail.com',
+				'school': 'Lynda',
+				'datesAttended' : 'February - March 2015',
+				'urlToCourse': 'www.lynda.com',
+			}
+		
 	]
 };
+
+document.getElementById('education').style.backgroundColor = 'black';
+document.getElementById('workExperience').style.backgroundColor = 'black';
+document.getElementById('projects').style.backgroundColor = 'black';
+document.getElementById('mapDiv').style.backgroundColor = 'black';
+document.getElementById('lets-connect').style.backgroundColor = 'black';
+
+var formattedName = HTMLheaderName.replace("%data%", bio['name']);
+var formattedRole = HTMLheaderRole.replace('%data%', 'Web Developer');
+
+$("#header").prepend(formattedName);
+
+
+
+
+
+
+
